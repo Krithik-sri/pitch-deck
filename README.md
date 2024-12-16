@@ -52,12 +52,21 @@ Welcome to the **Pitch Deck Practice Platform**, a web application designed for 
 4. Configure environment variables: Create a .env file in the root directory and add the following:
 .env
   ```env
-  DATABASE_URL="your_mongodb_connection_string"
-  NEXT_PUBLIC_CLERK_FRONTEND_API="your_clerk_frontend_api"
-  CLERK_API_KEY="your_clerk_api_key"
-  ```
 
-5. 💡 Acknowledgments
+   NEXT_PUBLIC_CLERK_FRONTEND_API="your_clerk_frontend_api"
+   CLERK_API_KEY="your_clerk_api_key"
+   CLOUDINARY_CLOUD_NAME="your_cloudinary_cloud_name"
+   CLOUDINARY_API_KEY="your_cloudinary_api_key"
+   CLOUDINARY_API_SECRET="your_cloudinary_api_secret"
+
+  ```
+5. Apply Database migrations
+
+   ```bash
+   npx prisma migrate dev
+   ```
+
+6. 💡 Acknowledgments
 Smart India Hackathon 2024 for inspiring this project
 The amazing team at Next.js, Prisma, MongoDB, and Clerk for their incredible tools
 All students who use this platform to excel in their pitching skills!
